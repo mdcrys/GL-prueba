@@ -62,12 +62,16 @@ $(document).ready(function(){
       var modal = $(this)
       modal.find('.modal-title').text('New message to ' + recipient)
       modal.find('.modal-body input').val(recipient)
+      modal.css('width','750px');
     })
     
     $("#btn_custom").click(function(){
         $("#modal_custom").find(".modal-header").css("background", "linear-gradient(to left, #f5af19, #f12711)");
         $("#modal_custom").find(".modal-header").css("color", "white");
-        $("#modal_custom").find(".modal-title").text("Ejemplo en vivo de cambio de título");    
+      $("#modal_custom").find(".modal-title").text("Ejemplo en vivo de cambio de título");
+     
+
+      
         $('#modal_custom').modal('show');
     });
 });
